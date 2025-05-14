@@ -7,14 +7,13 @@ public class practice {
         System.out.println("Enter a number to sum:");
         int num=input.nextInt();
         int sum=0;
-        int rev=0;
         while(num>0){
-           int A =num%10;
-            rev=rev*10+A;
+            int A=num%10;
+            sum=sum+(A*A*A);
             num=num/10;
-        }
-        System.out.println("The sum of given num is:"+rev);
 
+        }
+        System.out.println("the of the given num is:"+sum);
 
     }
 }
